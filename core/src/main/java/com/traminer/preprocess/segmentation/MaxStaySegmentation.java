@@ -69,7 +69,7 @@ public class MaxStaySegmentation implements TrajectorySegmentation {
 
         // add last segment
         if(trajectory.size()  - startIndex > 1){
-            Trajectory temp = new Trajectory(trajectory.subList(startIndex, trajectory.size() - 1));
+            Trajectory temp = new Trajectory(trajectory.subList(startIndex, trajectory.size() ));
             temp.setId(trajectory.getId());
             segmentedT.add(temp);
         }
